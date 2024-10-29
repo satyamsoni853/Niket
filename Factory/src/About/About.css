@@ -1,0 +1,44 @@
+.about {
+  height: 70vh;
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 200px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: "Playwrite GB S", cursive;
+}
+
+.about-details{
+  width: 50%;
+}
+.about-details p:first-child {
+  font-size: 2.2rem;
+  color: #00818a;
+  
+}
+.about-details p:nth-of-type(2) {
+  font-size: 1.5rem;
+  
+}
+.about-details p:nth-of-type(5) {
+  font-size: 1.5rem;
+  color: #00818a;
+  
+}
+
+.about-image img{
+  border-radius: 30px;
+  width: 400px;
+}
+
+@media (max-width: 800px) {
+  .about {
+    flex-wrap: wrap;
+  }
+
+  .about-details {
+    text-align: center;
+  }
+}

@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.deep-image img{
+   height: 500px;
+    width: 100%;
+    
+}
+.gif{
+    height: 150px;
+    width: 150px;
+}
+.gif-images{
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+@media (max-width:1000px) {
+    .gif-images img:nth-child(2),
+    .gif-images img:nth-child(3){
+        display: none;
+        
+
+    }
+    
+}
+

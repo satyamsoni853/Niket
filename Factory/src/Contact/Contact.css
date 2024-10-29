@@ -1,0 +1,93 @@
+.contact{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.contact-heading{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+.contact-details{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 100px;
+    border: 2px solid gray;
+    width: 60%;
+    margin: 0 auto;
+    height: 10%;
+    border-radius:15px ;
+    padding: 20px;
+ 
+
+}
+.desc{
+    align-items: center;
+    gap: 10px;
+    font-size: 1.7rem;
+    display: flex;
+}
+
+.marquee-image {
+    width: 80px; /* Adjust image width */
+    height: auto;
+    margin: 0 120px; /* Moderate space between images */
+    display: inline-block;
+    transition: transform 0.3s ease;
+    /* border-radius: 8px; */
+    /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); */
+}
+
+/* Image hover effect */
+.marquee-image:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.marque-img {
+    /* background-color: #f9f9f9; */
+    padding: 10px;
+    /* white-space: nowrap; */
+    /* border-top: 1px solid #e0e0e0; */
+    /* border-bottom: 1px solid #e0e0e0; */
+    margin-top: 20px;
+}
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+  
+
+    .marquee-image {
+        width: 60px; /* Smaller image size */
+        margin: 0 20px; /* Reduced space between images */
+    }
+
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    
+
+    .marquee-image {
+        width: 50px; /* Further reduce image size */
+        margin: 0 10px; /* Narrower gap between images */
+    }
+
+    
+}
+@media (max-width:1000px) {
+    .desc{
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    .contact-details{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+     
+    
+    }
+}

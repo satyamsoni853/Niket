@@ -1,0 +1,154 @@
+
+.location {
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.location h1 {
+    font-size: 2.5rem;
+    margin-top: 15px;
+    text-align: center;
+    color: #333;
+}
+
+.location h1 a {
+    color: rgb(106, 106, 237);
+    text-decoration: underline;
+}
+
+.location-desc h1 {
+    text-align: start;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.our-company {
+    margin: 0 50px;
+    line-height: 1.6;
+}
+
+.our-company h1 {
+    text-align: center;
+    color: #444;
+    font-weight: bold;
+    
+}
+
+.heading {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+.factory-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 200px;
+}
+.factory-img video{
+    border-radius: 20px;
+}
+
+.factory-img img{
+    width: 400px;
+    border-radius: 20px;
+}
+.location h1:first-child{
+    color: #00818a;
+}
+.location-heading{
+    color: #00818a;
+}
+/* Responsive styling */
+
+/* Medium screens (tablets) */
+@media (max-width: 768px) {
+    .location h1 {
+        font-size: 2rem;
+    }
+
+    .location-desc h1,
+    .our-company {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .marquee-image {
+        width: 60px; /* Smaller image size */
+        margin: 0 20px; /* Reduced space between images */
+    }
+
+    .our-company h1 {
+        font-size: 1.8rem;
+    }
+}
+
+/* Small screens (phones) */
+@media (max-width: 480px) {
+    .location h1 {
+        font-size: 1.8rem;
+    }
+
+    .location-desc h1,
+    .our-company {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    .marquee-image {
+        width: 50px; 
+        margin: 0 10px;
+    }
+
+    .our-company h1 {
+        font-size: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1rem;
+    }
+}
+
+.location {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; 
+    border: 1px solid #ddd; 
+    border-radius: 5px; 
+    margin: 20px; 
+  }
+  
+  .location h1 {
+    color: #00818a;
+    margin-bottom: 10px; 
+  }
+  
+  .location p {
+    font-size: 1.2em;
+    margin-bottom: 15px; 
+  }
+  
+  .location address {
+    font-style: normal; 
+    margin-bottom: 15px; 
+  }
+  
+  .location a {
+    color: #00818a; 
+    text-decoration: underline;
+  }
+  
+  .location a:hover {
+    color: #005f5f;
+  }
+  @media (max-width:1000px) {
+    .factory-img{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+  }
