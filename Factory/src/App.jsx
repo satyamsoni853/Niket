@@ -12,22 +12,25 @@ import Landing from "./Landing/Landing";
 function App() {
   return (
     <div>
-       <Navbar />
+       
+      <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Navbar />} />
+        <Route path="/about" element={<About />} /> 
+        <Route path="/product" element={<Product />} />
+        <Route path="/location" element={<Location />} />
+        <Route path="/contact" element={<Contact />} />
+       </Routes> 
+    </BrowserRouter>
+    <BrowserRouter>
+      {/* <Navbar /> */}
       <Landing />
       <About />
       <Product />
       <Location />
       <Contact />
-      <Footer /> 
-      {/* <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Navbar />} />
-        <Route path="/About" element={<About />} /> */}
-        {/* <Route path="/product" element={<Product />} /> */}
-        {/* <Route path="/location" element={<Location />} /> */}
-        {/* <Route path="/contact" element={<Contact />} /> */}
-      {/* </Routes>
-    </BrowserRouter> */}
+      <Footer />
+    </BrowserRouter>
      
     </div>
   );

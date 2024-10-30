@@ -3,6 +3,8 @@ import './Navbar.css';
 import Navimages from './navimage.png'
 import { CiMenuBurger } from "react-icons/ci";
 import { IoCloseSharp } from "react-icons/io5";
+import { Link } from "react-router-dom";
+
 function Navbar() {
   const [showsidebarr, setShowsidebarr] = useState(true);
 
@@ -17,10 +19,10 @@ function Navbar() {
       <ul>      
         <li>EverGreenCare</li>
         <li className="nav-image" ><img src={Navimages} alt="" /></li>
-        <li>About</li>
-        <li>Our product</li>
-        <li>Loacation</li>
-        <li>Contact us</li>
+        <li><Link to="/About" >About</Link></li>
+        <li><Link to="/product" >Product</Link></li>
+        <li><Link to="/location" >Location</Link></li>
+        <li><Link to="/contact" >ContactUs</Link></li>
         <li className="cimenubarr" onClick={handleHamBurger} >
         {showsidebarr ? <CiMenuBurger /> : <IoCloseSharp />}
         </li>
